@@ -6,6 +6,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
 import { simpleAction } from './actions/simpleAction'
+import Grime from './components/Grime'
 import logo from './logo.svg'
 import './App.css'
 
@@ -18,12 +19,12 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">Digital Grime Dice Playground</h1>
         </header>
+        <Grime />
         <button onClick={this.simpleAction}>Test redux action</button>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload
+          Welcome to the world of non-transitive dice!
           <pre>{JSON.stringify(this.props)}</pre>
         </p>
       </div>
