@@ -3,8 +3,8 @@
 */
 
 import { combineReducers } from 'redux'
-import simpleReducer from './simpleReducer'
+import rolls from './rolls'
 
 export default combineReducers({
-  simpleReducer
+  rolls
 })
